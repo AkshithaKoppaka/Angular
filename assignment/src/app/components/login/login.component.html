@@ -1,0 +1,17 @@
+ 
+    <h2>Login</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="CheckUser()">
+        
+        Username: 
+    <input type="text" id="username" name="username" formControlName="username"/>
+    <br/>
+    Password:
+    <input type="password" id="password" name="password" formControlName="password"/>
+    <br/>
+    <br/>
+    <div>
+    <button type="submit">Login</button>
+</div>
+</form>
+
